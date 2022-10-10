@@ -6,6 +6,7 @@ jobs:
   publish-test-results:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action@v1
         with:
