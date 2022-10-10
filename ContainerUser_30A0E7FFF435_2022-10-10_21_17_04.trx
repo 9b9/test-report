@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="47fade8f-9c41-4804-adfa-2f59fefab66a" name="ContainerUser@30A0E7FFF435 2022-10-10 21:17:04" runUser="User Manager\ContainerUser" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-10-10T21:17:04.5766665+08:00" queuing="2022-10-10T21:17:04.5766668+08:00" start="2022-10-10T21:17:02.7368219+08:00" finish="2022-10-10T21:17:04.5863334+08:00" />
+  <TestSettings name="default" id="db214708-317a-4946-b191-cdc2338edb76">
+    <Deployment runDeploymentRoot="ContainerUser_30A0E7FFF435_2022-10-10_21_17_04" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="b57e8a37-9bd7-4ac1-b456-84fefb71c78b" testId="410b3291-a1ef-9a32-5a45-977e776acb17" testName="Add_AddTwoValue_ReturnsSum(1,2,3)" computerName="30A0E7FFF435" duration="00:00:00.0122450" startTime="2022-10-10T21:17:04.3699255+08:00" endTime="2022-10-10T21:17:04.3820867+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b57e8a37-9bd7-4ac1-b456-84fefb71c78b" />
+    <UnitTestResult executionId="ed86daa3-2c4d-404e-99f0-89446723a89a" testId="388ef2f1-b7fb-549f-cd06-59da8e618620" testName="Add_AddTwoValue_ReturnsSum(2,2,5)" computerName="30A0E7FFF435" duration="00:00:00.0416630" startTime="2022-10-10T21:17:04.3881427+08:00" endTime="2022-10-10T21:17:04.4298050+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed86daa3-2c4d-404e-99f0-89446723a89a">
+      <Output>
+        <ErrorInfo>
+          <Message>  Expected: 5&#xD;
+  But was:  4&#xD;
+</Message>
+          <StackTrace>   at SampleTests.Tests.Add_AddTwoValue_ReturnsSum(Int32 a, Int32 b, Int32 expected) in C:\source\test\SampleTests\CalculateTests.cs:line 16&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Add_AddTwoValue_ReturnsSum(1,2,3)" storage="c:\source\test\sampletests\bin\debug\net6.0\sampletests.dll" id="410b3291-a1ef-9a32-5a45-977e776acb17">
+      <Execution id="b57e8a37-9bd7-4ac1-b456-84fefb71c78b" />
+      <TestMethod codeBase="C:\source\test\SampleTests\bin\Debug\net6.0\SampleTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="SampleTests.Tests" name="Add_AddTwoValue_ReturnsSum(1,2,3)" />
+    </UnitTest>
+    <UnitTest name="Add_AddTwoValue_ReturnsSum(2,2,5)" storage="c:\source\test\sampletests\bin\debug\net6.0\sampletests.dll" id="388ef2f1-b7fb-549f-cd06-59da8e618620">
+      <Execution id="ed86daa3-2c4d-404e-99f0-89446723a89a" />
+      <TestMethod codeBase="C:\source\test\SampleTests\bin\Debug\net6.0\SampleTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="SampleTests.Tests" name="Add_AddTwoValue_ReturnsSum(2,2,5)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="410b3291-a1ef-9a32-5a45-977e776acb17" executionId="b57e8a37-9bd7-4ac1-b456-84fefb71c78b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="388ef2f1-b7fb-549f-cd06-59da8e618620" executionId="ed86daa3-2c4d-404e-99f0-89446723a89a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.2.0.0: Test execution started&#xD;
+Running all tests in C:\source\test\SampleTests\bin\Debug\net6.0\SampleTests.dll&#xD;
+   NUnit3TestExecutor discovered 2 of 2 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.2.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
